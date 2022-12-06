@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod_demo/constant.dart';
+import 'package:riverpod_demo/pages/change_notifier_provider_page.dart';
 import 'package:riverpod_demo/pages/future_provider_page.dart';
 import 'package:riverpod_demo/pages/provider_page.dart';
+import 'package:riverpod_demo/pages/state_notifier_provider_page.dart';
 import 'package:riverpod_demo/pages/state_provider_page.dart';
+import 'package:riverpod_demo/pages/stream_provider_page.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -41,6 +44,12 @@ class Home extends StatelessWidget {
         return const StateProviderPage();
       case 2:
         return const FutureProviderPage();
+      case 3:
+        return const StreamProviderPage();
+      case 4:
+        return const ChangeNotifierProviderPage();
+      case 5:
+        return const StateNotifierProviderPage();
 
       default:
         return const SizedBox();
