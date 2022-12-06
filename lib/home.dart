@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod_demo/constant.dart';
+import 'package:riverpod_demo/pages/future_provider_page.dart';
 import 'package:riverpod_demo/pages/provider_page.dart';
 import 'package:riverpod_demo/pages/state_provider_page.dart';
 
@@ -38,6 +39,8 @@ class Home extends StatelessWidget {
         return const ProviderPage();
       case 1:
         return const StateProviderPage();
+      case 2:
+        return const FutureProviderPage();
 
       default:
         return const SizedBox();
