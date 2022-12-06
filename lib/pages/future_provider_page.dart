@@ -16,7 +16,7 @@ class FutureProviderPage extends ConsumerWidget {
     return Scaffold(
         backgroundColor: Colors.blue.withOpacity(.3),
         appBar: AppBar(
-          title: const Text('Future Providere'),
+          title: const Text('Future Provider'),
         ),
         body: RefreshIndicator(
           onRefresh: () => ref.refresh(activityProvider.future),
